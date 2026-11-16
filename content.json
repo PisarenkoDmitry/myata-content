@@ -47,10 +47,10 @@
     "buttonText": "Подать заявку"
   },
   "offers": [
-    { "id": "offer-1", "order": 1, "enabled": true, "logoUrl": "", "link": "", "tag": "Без проверки КИ", "conditionsText": "до 30 000 ₽ от 61 дня",    "adLabel": "Реклама [ЮРИДИЧЕСКОЕ НАЗВАНИЕ МФО] (ИНН [ИНН])" },
-    { "id": "offer-2", "order": 2, "enabled": true, "logoUrl": "", "link": "", "tag": "Без проверки КИ", "conditionsText": "до 50 000 ₽ от 90 дней",   "adLabel": "Реклама [ЮРИДИЧЕСКОЕ НАЗВАНИЕ МФО] (ИНН [ИНН])" },
-    { "id": "offer-3", "order": 3, "enabled": true, "logoUrl": "", "link": "", "tag": "Без проверки КИ", "conditionsText": "до 25 000 ₽ от 61 дня",    "adLabel": "Реклама [ЮРИДИЧЕСКОЕ НАЗВАНИЕ МФО] (ИНН [ИНН])" },
-    { "id": "offer-4", "order": 4, "enabled": true, "logoUrl": "", "link": "", "tag": "Без проверки КИ", "conditionsText": "до 100 000 ₽ от 120 дней", "adLabel": "Реклама [ЮРИДИЧЕСКОЕ НАЗВАНИЕ МФО] (ИНН [ИНН])" }
+    { "id": "offer-1", "order": 1, "enabled": true, "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/zaimer.png", "link": "", "tag": "Без проверки КИ", "conditionsText": "до 30 000 ₽ от 61 дня",    "adLabel": "Реклама [ЮРИДИЧЕСКОЕ НАЗВАНИЕ МФО] (ИНН [ИНН])" },
+    { "id": "offer-2", "order": 2, "enabled": true, "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/turbozaim.png", "link": "", "tag": "Без проверки КИ", "conditionsText": "до 50 000 ₽ от 90 дней",   "adLabel": "Реклама [ЮРИДИЧЕСКОЕ НАЗВАНИЕ МФО] (ИНН [ИНН])" },
+    { "id": "offer-3", "order": 3, "enabled": true, "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/moneyman.png", "link": "", "tag": "Без проверки КИ", "conditionsText": "до 25 000 ₽ от 61 дня",    "adLabel": "Реклама [ЮРИДИЧЕСКОЕ НАЗВАНИЕ МФО] (ИНН [ИНН])" },
+    { "id": "offer-4", "order": 4, "enabled": true, "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/bystrodengi.png", "link": "", "tag": "Без проверки КИ", "conditionsText": "до 100 000 ₽ от 120 дней", "adLabel": "Реклама [ЮРИДИЧЕСКОЕ НАЗВАНИЕ МФО] (ИНН [ИНН])" }
   ],
   "faq": {
     "title": "Вопросы и ответы",
