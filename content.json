@@ -48,10 +48,10 @@
     },
     "term": {
       "label": "На срок",
-      "min": 5,
+      "min": 61,
       "max": 126,
       "step": 1,
-      "default": 15,
+      "default": 90,
       "unitForms": {
         "one": "день",
         "few": "дня",
@@ -73,15 +73,16 @@
   },
   "offersScreen": {
     "title": "Предложения для вас",
-    "subtitle": "Внимательно прочитайте условия и договор до подачи заявки",
+    "subtitle": "Условия указывает МФО. Внимательно прочитайте договор",
     "buttonText": "Подать заявку",
-    "disclaimer": "Мята — информационный сервис. Мы не выдаём займы и не принимаем решения по заявкам: это делает МФО. Условия определяет МФО, итоговые значения указаны в договоре. Одобрение не гарантируется. Займ — платная услуга. Максимальная ПСК в предложениях — 292 % годовых. Пример: 10 000 ₽ на 10 дней под 0,8 % в день — проценты 800 ₽, к возврату 10 800 ₽. Несвоевременный возврат влечёт штрафы и пени и ухудшает кредитную историю."
+    "disclaimer": "Мята — информационный сервис. Мы не выдаём займы и не принимаем решения по заявкам: это делает МФО. Условия определяет МФО и указывает в договоре. Одобрение не гарантируется. Займ — платная услуга. Несвоевременный возврат влечёт штрафы и пени и ухудшает кредитную историю.",
+    "emptyText": "Сейчас нет доступных предложений. Загляните позже."
   },
   "offers": [
     {
       "id": "offer-1",
       "order": 1,
-      "enabled": true,
+      "enabled": false,
       "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/zaimer.png",
       "link": "https://t.leads.tech/click/1657/1401/",
       "tag": "",
@@ -95,7 +96,7 @@
     {
       "id": "offer-2",
       "order": 2,
-      "enabled": true,
+      "enabled": false,
       "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/turbozaim.png",
       "link": "https://t.leads.tech/click/1657/79/",
       "tag": "",
@@ -110,7 +111,7 @@
     {
       "id": "offer-3",
       "order": 3,
-      "enabled": true,
+      "enabled": false,
       "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/moneyman.png",
       "link": "https://t.leads.tech/click/1657/1/",
       "tag": "Первый заём 0 %",
@@ -124,7 +125,7 @@
     {
       "id": "offer-4",
       "order": 4,
-      "enabled": true,
+      "enabled": false,
       "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/hurmacredit.png",
       "link": "https://t.leads.tech/click/1657/794/",
       "tag": "",
@@ -162,7 +163,7 @@
         "id": "cost",
         "enabled": true,
         "question": "Сколько придётся вернуть?",
-        "answer": "Итоговую сумму, ставку и срок определяет МФО и указывает в договоре. Максимальная ПСК в наших предложениях — 292 % годовых: за 10 дней по 0,8 % в день на 10 000 ₽ набегает 800 ₽ процентов. Проверьте условия перед подписанием."
+        "answer": "Итоговую сумму, ставку и срок определяет МФО и указывает в договоре. Перед подписанием внимательно проверьте условия."
       },
       {
         "id": "overdue",
@@ -198,7 +199,7 @@
         "id": "cost_en",
         "enabled": true,
         "question": "How much will I have to repay?",
-        "answer": "The total amount, rate and term are set by the MFO and stated in the contract. The maximum APR in our offers is 292% per year: at 0.8% per day, 10,000 ₽ for 10 days accrues 800 ₽ in interest. Check the terms before signing."
+        "answer": "The total amount, rate and term are set by the MFO and stated in the contract. Check the terms carefully before signing."
       },
       {
         "id": "overdue_en",
