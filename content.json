@@ -1,10 +1,10 @@
 {
   "schemaVersion": 2,
-  "updatedAt": "2026-11-16T16:50:00+03:00",
+  "updatedAt": "2026-11-20T14:00:00+03:00",
   "app": {
     "name": "Мята",
     "currencySymbol": "₽",
-    "privacyPolicyUrl": ""
+    "privacyPolicyUrl": "https://pisarenkodmitry.github.io/myata-content/privacy.html"
   },
   "tabs": {
     "calculator": "Оформление",
@@ -14,54 +14,204 @@
   "slides": {
     "autoAdvanceMs": 3500,
     "items": [
-      { "id": "card",  "enabled": true, "imageUrl": "", "title": "Деньги прямо на карту", "subtitle": "Одобрение за 5 минут, поддержка 24/7" },
-      { "id": "zero",  "enabled": true, "imageUrl": "", "title": "Первый займ под 0 %",   "subtitle": "Для новых клиентов" },
-      { "id": "limit", "enabled": true, "imageUrl": "", "title": "Получите до 100 000 ₽", "subtitle": "Даже с плохой кредитной историей" }
+      {
+        "id": "card",
+        "enabled": true,
+        "imageUrl": "",
+        "title": "Подбор займов в одном месте",
+        "subtitle": "Сравните условия МФО и выберите подходящее"
+      },
+      {
+        "id": "zero",
+        "enabled": true,
+        "imageUrl": "",
+        "title": "Условия видны сразу",
+        "subtitle": "Сумма, срок и ставка — до подачи заявки"
+      },
+      {
+        "id": "limit",
+        "enabled": true,
+        "imageUrl": "",
+        "title": "Займы до 100 000 ₽",
+        "subtitle": "Решение принимает МФО. Одобрение не гарантируется"
+      }
     ]
   },
   "calculator": {
     "title": "Выберите сумму и срок",
-    "amount": { "label": "Вы берёте", "min": 3000, "max": 100000, "step": 1000, "default": 30000 },
+    "amount": {
+      "label": "Вы берёте",
+      "min": 1000,
+      "max": 100000,
+      "step": 1000,
+      "default": 10000
+    },
     "term": {
       "label": "На срок",
-      "min": 3, "max": 90, "step": 1, "default": 30,
-      "unitForms": { "one": "день", "few": "дня", "many": "дней" }
+      "min": 5,
+      "max": 126,
+      "step": 1,
+      "default": 15,
+      "unitForms": {
+        "one": "день",
+        "few": "дня",
+        "many": "дней"
+      }
     },
-    "returnLabel": "Вы возвращаете",
-    "buttonTemplate": "Получить {amount}"
+    "returnLabel": "",
+    "buttonTemplate": "Подобрать на {amount}"
   },
   "loading": {
     "title": "Подбираем предложения",
     "subtitle": "по вашим параметрам",
     "stepDurationMs": 1200,
     "steps": [
-      "Ищем доступные варианты на рынке",
-      "Сравниваем условия и переплату",
-      "Проверяем акции и специальные предложения",
-      "Формируем список лучших вариантов"
+      "Ищем доступные варианты",
+      "Сравниваем условия",
+      "Формируем список предложений"
     ]
   },
   "offersScreen": {
     "title": "Предложения для вас",
-    "subtitle": "Чтобы повысить шанс одобрения, оставьте заявки в 2–3 МФО",
-    "buttonText": "Подать заявку"
+    "subtitle": "Внимательно прочитайте условия и договор до подачи заявки",
+    "buttonText": "Подать заявку",
+    "disclaimer": "Мята — информационный сервис. Мы не выдаём займы и не принимаем решения по заявкам: это делает МФО. Условия определяет МФО, итоговые значения указаны в договоре. Одобрение не гарантируется. Займ — платная услуга. Максимальная ПСК в предложениях — 292 % годовых. Пример: 10 000 ₽ на 10 дней под 0,8 % в день — проценты 800 ₽, к возврату 10 800 ₽. Несвоевременный возврат влечёт штрафы и пени и ухудшает кредитную историю."
   },
   "offers": [
-    { "id": "offer-1", "order": 1, "enabled": true, "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/zaimer.png", "link": "", "tag": "Без проверки КИ", "conditionsText": "до 30 000 ₽ от 61 дня",    "adLabel": "Реклама [ЮРИДИЧЕСКОЕ НАЗВАНИЕ МФО] (ИНН [ИНН])" },
-    { "id": "offer-2", "order": 2, "enabled": true, "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/turbozaim.png", "link": "", "tag": "Без проверки КИ", "conditionsText": "до 50 000 ₽ от 90 дней",   "adLabel": "Реклама [ЮРИДИЧЕСКОЕ НАЗВАНИЕ МФО] (ИНН [ИНН])" },
-    { "id": "offer-3", "order": 3, "enabled": true, "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/moneyman.png", "link": "", "tag": "Без проверки КИ", "conditionsText": "до 25 000 ₽ от 61 дня",    "adLabel": "Реклама [ЮРИДИЧЕСКОЕ НАЗВАНИЕ МФО] (ИНН [ИНН])" },
-    { "id": "offer-4", "order": 4, "enabled": true, "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/bystrodengi.png", "link": "", "tag": "Без проверки КИ", "conditionsText": "до 100 000 ₽ от 120 дней", "adLabel": "Реклама [ЮРИДИЧЕСКОЕ НАЗВАНИЕ МФО] (ИНН [ИНН])" }
+    {
+      "id": "offer-1",
+      "order": 1,
+      "enabled": true,
+      "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/zaimer.png",
+      "link": "https://t.leads.tech/click/1657/1401/",
+      "tag": "",
+      "conditionsText": "1 000 – 50 000 ₽ на 5–31 день",
+      "details": [
+        "Возраст заёмщика: от 18 до 75 лет",
+        "Полная стоимость займа (ПСК): 292 % годовых. Ставка: от 0 % до 0,8 % в день."
+      ],
+      "adLabel": "Реклама. ПАО МКК «Займер», ИНН 5406836941"
+    },
+    {
+      "id": "offer-2",
+      "order": 2,
+      "enabled": true,
+      "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/turbozaim.png",
+      "link": "https://t.leads.tech/click/1657/79/",
+      "tag": "",
+      "conditionsText": "3 000 – 30 000 ₽ на 7–21 день",
+      "details": [
+        "Возраст заёмщика: от 18 до 75 лет",
+        "0 % в день первые 7 дней при условии полного возврата в срок, далее 0,8 % в день.",
+        "Полная стоимость займа (ПСК): от 286,4 % до 292 % годовых."
+      ],
+      "adLabel": "Реклама. ООО МКК «Турбозайм», ИНН 7702820127"
+    },
+    {
+      "id": "offer-3",
+      "order": 3,
+      "enabled": true,
+      "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/moneyman.png",
+      "link": "https://t.leads.tech/click/1657/1/",
+      "tag": "Первый заём 0 %",
+      "conditionsText": "1 000 – 100 000 ₽ на 5–126 дней",
+      "details": [
+        "Возраст заёмщика: от 18 до 75 лет",
+        "Ставка 0 % действует только на первый заём до 30 000 ₽. Полная стоимость займа указана в договоре на сайте МФО."
+      ],
+      "adLabel": "Реклама. ООО МФК «Мани Мен», ИНН 7704784072"
+    },
+    {
+      "id": "offer-4",
+      "order": 4,
+      "enabled": true,
+      "logoUrl": "https://pisarenkodmitry.github.io/myata-content/logos/hurmacredit.png",
+      "link": "https://t.leads.tech/click/1657/794/",
+      "tag": "",
+      "conditionsText": "1 000 – 50 000 ₽ на 5–31 день",
+      "details": [
+        "Возраст заёмщика: от 18 до 75 лет",
+        "Полная стоимость займа (ПСК): 292 % годовых. Ставка: от 0 % до 0,8 % в день."
+      ],
+      "adLabel": "Реклама. ООО «Хурма Кредит МКК», ИНН 5262390614"
+    }
   ],
   "faq": {
     "title": "Вопросы и ответы",
     "subtitle": "Коротко о том, как работает Мята",
     "items": [
-      { "id": "what",    "enabled": true, "question": "Что такое Мята?", "answer": "Это сервис подбора займов. Мы показываем предложения МФО и открываем их сайты. Сами займы мы не выдаём и решений по заявкам не принимаем." },
-      { "id": "apply",   "enabled": true, "question": "Как оформить заявку?", "answer": "Выберите сумму и срок, откройте подходящее предложение и заполните анкету на сайте МФО. Решение по заявке принимает сама МФО." },
-      { "id": "who",     "enabled": true, "question": "Кто может получить займ?", "answer": "У каждой МФО свои требования. Чаще всего нужны паспорт РФ, возраст от 18 лет и банковская карта. Точный список условий смотрите на сайте выбранной организации." },
-      { "id": "cost",    "enabled": true, "question": "Сколько придётся вернуть?", "answer": "Итоговую сумму, ставку и срок определяет МФО и указывает в договоре. Перед подписанием внимательно проверьте эти условия." },
-      { "id": "overdue", "enabled": true, "question": "Что будет, если не вернуть займ вовремя?", "answer": "Начисляются штрафы и пени, а информация о просрочке попадает в бюро кредитных историй. Если понимаете, что не успеваете, заранее свяжитесь с МФО и обсудите продление срока." },
-      { "id": "legal",   "enabled": true, "question": "Как проверить, что МФО работает легально?", "answer": "Организация должна быть в государственном реестре МФО на сайте Банка России, cbr.ru. Проверить её можно по названию или ИНН." }
+      {
+        "id": "what",
+        "enabled": true,
+        "question": "Что такое Мята?",
+        "answer": "Это сервис подбора займов. Мы показываем предложения МФО и открываем их сайты. Сами займы мы не выдаём и решений по заявкам не принимаем."
+      },
+      {
+        "id": "apply",
+        "enabled": true,
+        "question": "Как оформить заявку?",
+        "answer": "Выберите сумму и срок, откройте подходящее предложение и заполните анкету на сайте МФО. Решение по заявке принимает сама МФО."
+      },
+      {
+        "id": "who",
+        "enabled": true,
+        "question": "Кто может получить займ?",
+        "answer": "У каждой МФО свои требования. Чаще всего нужны паспорт РФ, возраст от 18 лет и банковская карта. Точный список условий смотрите на сайте выбранной организации."
+      },
+      {
+        "id": "cost",
+        "enabled": true,
+        "question": "Сколько придётся вернуть?",
+        "answer": "Итоговую сумму, ставку и срок определяет МФО и указывает в договоре. Максимальная ПСК в наших предложениях — 292 % годовых: за 10 дней по 0,8 % в день на 10 000 ₽ набегает 800 ₽ процентов. Проверьте условия перед подписанием."
+      },
+      {
+        "id": "overdue",
+        "enabled": true,
+        "question": "Что будет, если не вернуть займ вовремя?",
+        "answer": "Начисляются штрафы и пени, а информация о просрочке попадает в бюро кредитных историй. Если понимаете, что не успеваете, заранее свяжитесь с МФО и обсудите продление срока."
+      },
+      {
+        "id": "legal",
+        "enabled": true,
+        "question": "Как проверить, что МФО работает легально?",
+        "answer": "Организация должна быть в государственном реестре МФО на сайте Банка России, cbr.ru. Проверить её можно по названию или ИНН."
+      },
+      {
+        "id": "what_en",
+        "enabled": true,
+        "question": "What is Myata?",
+        "answer": "Myata is a loan comparison service. We show offers from microfinance organizations (MFOs) and open their websites. We do not issue loans and do not make decisions on applications."
+      },
+      {
+        "id": "apply_en",
+        "enabled": true,
+        "question": "How do I apply?",
+        "answer": "Choose an amount and term, open a suitable offer and fill in the form on the MFO's website. The MFO itself decides on your application."
+      },
+      {
+        "id": "who_en",
+        "enabled": true,
+        "question": "Who can get a loan?",
+        "answer": "Each MFO has its own requirements. Usually you need a Russian passport, to be at least 18 years old and to have a bank card. See the exact list of conditions on the selected organization's website."
+      },
+      {
+        "id": "cost_en",
+        "enabled": true,
+        "question": "How much will I have to repay?",
+        "answer": "The total amount, rate and term are set by the MFO and stated in the contract. The maximum APR in our offers is 292% per year: at 0.8% per day, 10,000 ₽ for 10 days accrues 800 ₽ in interest. Check the terms before signing."
+      },
+      {
+        "id": "overdue_en",
+        "enabled": true,
+        "question": "What happens if I don't repay on time?",
+        "answer": "Fines and penalties are charged, and information about the delay is passed to credit bureaus. If you know you won't make it, contact the MFO in advance and discuss extending the term."
+      },
+      {
+        "id": "legal_en",
+        "enabled": true,
+        "question": "How can I check that an MFO operates legally?",
+        "answer": "The organization must be listed in the state register of MFOs on the Bank of Russia website, cbr.ru. You can check it by name or tax ID (INN)."
+      }
     ]
   }
 }
